@@ -25,7 +25,7 @@ import quickfix.fix42.MarketDataIncrementalRefresh;
 import quickfix.fix42.MarketDataRequest;
 import quickfix.fix42.MessageCracker;
 
-public class MaxClientApp2 extends MessageCracker implements Application {
+public class MaxMultipleApp extends MessageCracker implements Application {
 	
 	private static final Logger log = Logger.getLogger(MaxClientApp.class);
 
@@ -41,14 +41,6 @@ public class MaxClientApp2 extends MessageCracker implements Application {
 			throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType {
 		// TODO Auto-generated method stub
 		log.info("------ fromApp---------");
-		try {
-			System.out.println("----before");
-			Thread.sleep(3000);
-			System.out.println("----after");
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		crack(msg, sessionID);
 		
 	}
@@ -108,14 +100,7 @@ public class MaxClientApp2 extends MessageCracker implements Application {
 		// TODO Auto-generated method stub
 		log.info("------ onMessage ExecutionReport---------");
 		System.out.println(message.toString());
-		try {
-			System.out.println("----before");
-			Thread.sleep(3000);
-			System.out.println("----after");
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	}
 
 	@Override
