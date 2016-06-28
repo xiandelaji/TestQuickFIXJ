@@ -1,4 +1,4 @@
-package com.btcchina.fix.util;
+package com.max.demo;
 
 import java.util.Iterator;
 
@@ -9,7 +9,7 @@ import quickfix.FieldNotFound;
 import quickfix.FieldType;
 import quickfix.Group;
 import quickfix.field.MsgType;
-import quickfix.fix44.Message;
+import quickfix.fix42.Message;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
