@@ -2,7 +2,7 @@ package com.max.demo;
 
 import org.apache.log4j.Logger;
 
-import com.btcchina.fix.util.MessagePrinter;
+import com.max.demo.MessagePrinter;
 
 import quickfix.Application;
 import quickfix.ConfigError;
